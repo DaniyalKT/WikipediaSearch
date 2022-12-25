@@ -1,1 +1,4 @@
-<p>search-bar works!</p>
+
+<form (submit)="onSubmit($event)"> 
+    <input type="text" class="form-control m-3" placeholder="Search" (input)="term = $event.target.value">
+</form>
