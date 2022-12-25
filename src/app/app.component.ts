@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  
+  onGetTermSearch(event: string){
+     console.log(event)
+  }
 }
