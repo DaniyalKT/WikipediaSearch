@@ -9,6 +9,5 @@ export class PageListComponent {
 @Input() searchResponse: [] = []
 
 constructor(){
-  console.log(this.searchResponse)
 }
 }

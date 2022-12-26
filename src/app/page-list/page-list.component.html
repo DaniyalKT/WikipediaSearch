@@ -1,1 +1,20 @@
-
+<table class="table table-dark  table-striped " *ngIf="searchResponse.length>0">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">WordCount</th>
+            <th scope="col">Snippet</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of searchResponse; let i = index">
+            <th scope="row">{{i+1}}</th>
+            <td>
+                <a [href]="'https://en.wikipedia.org/?curid=' + item.pageid" target="_blank">{{item.title}}</a>
+            </td>
+            <td>{{item.wordcount}}</td>
+            <td [innerHTML]="item.snippet"></td>
+        </tr>
+    </tbody>
+</table>
