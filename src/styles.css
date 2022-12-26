@@ -3,5 +3,9 @@
 
 
 body{
-    background-color: rgb(229, 227, 227);
+    background-color: #212529;
+}
+
+.searchmatch{
+    font-weight: bold;
 }
